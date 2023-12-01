@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#121212, #212b46);
+    background: linear-gradient(#fffcfc, #000000);
 }
 
 .title {
     font-size: 85px;
-    color: #fff;
+    color: #000000;
     animation: flipTitle 2s;
 }
 
