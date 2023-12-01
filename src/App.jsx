@@ -1,3 +1,6 @@
+import {FiSearch} from 'react-icons/fi'
+import './styles.css';
+
 function App() {
   
 
@@ -12,7 +15,21 @@ function App() {
         placeholder="Digite seu cep..."
         />
 
+        <button className="buttonSearch">
+          <FiSearch size={25} color="#fff"/>
+        </button>
       </div>
+
+
+      <main className="main">
+        <h2>CEP:79003222</h2>
+
+        <span>Rua Teste algum</span>
+        <span>Complemento: Algum complemento</span>
+        <span>Vila rosa</span>
+        <span>Campo Grande - MS</span>
+
+      </main>
       
     </div>
   )
