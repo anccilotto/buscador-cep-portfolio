@@ -1,21 +1,30 @@
+import {useState} from 'react';
 import {FiSearch} from 'react-icons/fi'
 import './styles.css';
 
 function App() {
+
+  const [input, setinput] = useState('')
+
+  function heandleSearch(){
+    alert("VALOR DO INPUT " + input)
+  }
   
 
   return (
     <div className="container">
 
-      <h1 className="title"> buscador CEP</h1>
+      <h1 className="title"> Buscador CEP</h1>
 
       <div className="containerInput">
         <input 
         type="text"
         placeholder="Digite seu cep..."
+        value={input}
+        onChange={(e) => setinput(e.target.value) }
         />
 
-        <button className="buttonSearch">
+        <button className="buttonSearch" onClick={heandleSearch}>
           <FiSearch size={25} color="#fff"/>
         </button>
       </div>
