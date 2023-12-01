@@ -2,8 +2,17 @@ function App() {
   
 
   return (
-    <div>
-      <h1> buscador cep</h1>
+    <div className="container">
+
+      <h1 className="title"> buscador CEP</h1>
+
+      <div className="containerInput">
+        <input 
+        type="text"
+        placeholder="Digite seu cep..."
+        />
+
+      </div>
       
     </div>
   )
